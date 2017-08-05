@@ -1,10 +1,10 @@
 {
   "name": "cnt-cohort-1",
   "version": "1.0.0",
-  "description": "Demo site of minimum viable product for CNT cohort 1",
-  "main": "index.js",
+  "description": "git remo",
+  "main": "./app/app.js",
   "scripts": {
-    "test": "test"
+    "app": "node app/app.js"
   },
   "repository": {
     "type": "git",

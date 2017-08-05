@@ -1,0 +1,45 @@
+<html>
+<h1>Welcome to CNT Cohort 1 MVP</h1>
+<body>
+    Property index number: <input type="text" id="pin-input" />
+    <input type="button" value="Get results!" onclick="getPropertyResults(); return false;"/>
+    <br />
+    <div id="property-results">
+        <div>Property attribute 1: <span id="property-attribute-1"></span></div>
+        <div>Property attribute 2: <span id="property-attribute-2"></span></div>
+        <div>Property attribute 3: <span id="property-attribute-3"></span></div>
+    </div>
+</body>
+<script type="text/javascript">
+    
+    function getPropertyResults() {
+        var pin = document.getElementById('pin-input').value;
+        if (pin && pin.length) {
+            var xhr = new XMLHttpRequest();
+            var params = 'pin=' + pin;
+            xhr.open('GET', 'property-results?' + params, true);
+
+            xhr.onreadystatechange = function() {
+                if (this.readyState == XMLHttpRequest.DONE) {
+                    if (this.status == 200) {
+                        populateResults(JSON.parse(this.responseText));
+                    }
+                    else {
+                        console.log(this.response);
+                    }  
+                }
+            }
+            xhr.send();
+        }
+    }
+
+    function populateResults(results) {
+        if (results) {
+            document.getElementById('property-attribute-1').innerHTML = results.att1;
+            document.getElementById('property-attribute-2').innerHTML = results.att2;
+            document.getElementById('property-attribute-3').innerHTML = results.att3;
+        }
+    }
+    
+</script>
+</html>
