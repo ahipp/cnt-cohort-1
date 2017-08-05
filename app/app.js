@@ -12,11 +12,7 @@ function PropertyResults() {
 app.get('/property-results', function(req, res) {
     console.log('Property results request made.'); 
     if (req.query.pin) {
-        var pin = req.query.pin;
-        var results = new PropertyResults();
-        results.att1 = 'Attribute 1 value for ' + pin;
-        results.att2 = 'Attribute 2 value for ' + pin;
-        results.att3 = 'Attribute 3 value for ' + pin;
+        var results = getPropertyResults(req.query.pin);
         res.setHeader('Content-Type', 'application/json');
         res.send(JSON.stringify(results));
     }
@@ -25,8 +21,12 @@ app.get('/property-results', function(req, res) {
         res.send('Error!');
     }
 });
-function getPropertyResults(pin) {
 
+function getPropertyResults(pin) {
+    var results = new PropertyResults();
+    results.att1 = 'Attribute 1 value for ' + pin;
+    results.att2 = 'Attribute 2 value for ' + pin;
+    results.att3 = 'Attribute 3 value for ' + pin;
 }
 
 app.get('/', function(req, res) {
