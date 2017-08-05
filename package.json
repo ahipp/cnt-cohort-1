@@ -1,0 +1,21 @@
+{
+  "name": "cnt-cohort-1",
+  "version": "1.0.0",
+  "description": "Demo site of minimum viable product for CNT cohort 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "cnt-cohort-1"
+  },
+  "keywords": [
+    "cnt"
+  ],
+  "author": "Adam Hipp",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
