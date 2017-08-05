@@ -27,6 +27,7 @@ function getPropertyResults(pin) {
     results.att1 = 'Attribute 1 value for ' + pin;
     results.att2 = 'Attribute 2 value for ' + pin;
     results.att3 = 'Attribute 3 value for ' + pin;
+    return results;
 }
 
 app.get('/', function(req, res) {
