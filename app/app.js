@@ -3,36 +3,34 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
-function PropertyResults() {
-    this.att1 = '';
-    this.att2 = '';
-    this.att3 = '';    
-}
+app.use(express.static('public'));
+app.set('view engine', 'ejs');
 
-app.get('/property-results', function(req, res) {
-    console.log('Property results request made.'); 
-    if (req.query.pin) {
-        var results = getPropertyResults(req.query.pin);
-        res.setHeader('Content-Type', 'application/json');
-        res.send(JSON.stringify(results));
-    }
-    else {
-        res.status(500);
-        res.send('Error!');
-    }
+app.get('/property-details', function(req, res) {
+    console.log('Property details request made. Address: ' + req.query.address); 
+    if (req.query.address) {
+		// Read in csv
+		
+		res.render('../app/views/pages/property-details', {
+			address: '123 Fake Street',
+			city: 'Chicago',
+			state: 'IL',
+			zip: 60647,
+			latitude: 41.911051,
+			longitude: -87.680945,
+			size: 10000,
+			zoning:	'Industrial',
+			type: 'Manufacturing',
+			imageFileName: 'testImage.jpg',
+			desirabilityScore: 99
+		});
+	}
+	else {res.status(500).send('No property matches that address!')}
 });
 
-function getPropertyResults(pin) {
-    var results = new PropertyResults();
-    results.att1 = 'Attribute 1 value for ' + pin;
-    results.att2 = 'Attribute 2 value for ' + pin;
-    results.att3 = 'Attribute 3 value for ' + pin;
-    return results;
-}
-
 app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname + '/../index.html'));
-})
+    res.render('../app/views/pages/index');
+});
 
 app.listen(3000, function() {
     console.log('Listening on port 3000');

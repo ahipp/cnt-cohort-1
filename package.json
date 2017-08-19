@@ -16,6 +16,8 @@
   "author": "Adam Hipp",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.15.3"
+    "csv": "1.1.1",
+	"ejs": "2.5.7",
+	"express": "4.15.3"
   }
 }
