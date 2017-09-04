@@ -7,19 +7,52 @@
 		<% include ../partials/header %>
 	</header>
 	<main>
-		<div id="address">
-		<div id="data-wrapper">
-			<h2>Property Details</h2>
-			<div id="desirability-score" class="info-panel">
-				Desirability score: <%= desirabilityscore %>
+		<div id="data-wrapper" class="col-md-12">
+			<h1>Property Details</h1>
+			<span class="col-md-4">
+				<div id="desirability-score" class="info-panel">
+					<h3>Attractiveness Score</h3><br />
+					<div class="score"><%= scores.score %></div>
+					Subscore 1: <%= scores.subscore1.score %> <br />
+					Subscore 2: <%= scores.subscore2.score %> <br />
+					Subscore 3: <%= scores.subscore3.score %>
+				</div>
+				<div id="collaborators" class="info-panel">
+					<h3>Collaborators</h3>
+					<% for(var i=0; i<collabs.length; i++) { %>
+						<div><%= collabs[i].name %> <br />
+						<%= collabs[i].title %>, <%= collabs[i].company %>
+						</div>
+					<% } %>
+				</div>
+			</span>
+			<span class="col-md-4">
+				<div id="property-specs" class="info-panel">
+					Address: <%= specs.street %>, <%= specs.city %>, <%= specs.state %> <%= specs.zip %> <br />
+					Size: <%= specs.size %> sq. ft. <br />
+					Zoning: <%= specs.zoning %> <br />
+					Type: <%= specs.type %> <br />
+				</div>
+			</span>
+			<span class="col-md-4">
+				<div id="property-image" class="info-panel">
+					<img src="../images/<%= image %>">
+				</div>
+			</span>
+			<div id="historical-comps" class="info-panel">
+				<h4>Historical Comparable Properties</h4>
+				<% for(var i=0; i<comps.length; i++) { %>
+					<div class="comp col-md-4">
+						<img src="../images/<%= comps[i].image %>"> <br />
+						<%= comps[i].street %>, <%= comps[i].city %>, <%= comps[i].state %> <%= comps[i].zip %> <br />
+					</div>
+				<% } %>
 			</div>
-			<div id="property-specs" class="info-panel">
-				Address: <%= address %>, <%= city %>, <%= state %> <%= zip %> <br />
-				Size: <%= size %> sq. ft. <br />
-				Zoning: <%= zoning %> <br />
-				Type: <%= type %> <br />
-				imageFileName:
-				<img src="../images/<%= imagefilename %>">
+			<div id="notes" class="info-panel">
+				<h2>Notes</h2>
+				<% for(var i=0; i<notes.length; i++) { %>
+					<div class="note"> <%= notes[i].name %> (<%= notes[i].timestamp %>): <%= notes[i].text %></div>
+				<% } %>
 			</div>
 		</div>
 	</main>
