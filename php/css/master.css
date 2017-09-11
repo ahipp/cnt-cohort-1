@@ -14,7 +14,6 @@ div.score {
 	display: inline-block;
 	margin: 5px;
 }
-div.comp {
-	width: 550px;
-	display: inline-block;
+div.comp img{
+	width: 200px;
 }
