@@ -1,10 +1,10 @@
 <html>
 <head>
-	<?php echo file_get_contents("head.html"); ?>
+	<?php echo file_get_contents("./html/head.html"); ?>
 </head>
 <body>
 	<header>
-		<?php echo file_get_contents("header.html"); ?>
+		<?php echo file_get_contents("./html/header.html"); ?>
 	</header>
 	<main>
 		<br />
