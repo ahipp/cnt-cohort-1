@@ -5,6 +5,9 @@
 #historical-comps {
 	display: inline-block;
 }
+#property-image {
+	float: right;
+}
 div.score {
 	font-size: 72;
 }
@@ -14,6 +17,10 @@ div.score {
 	display: inline-block;
 	margin: 5px;
 }
+div.comp {
+	display: inline-block;
+}
 div.comp img{
-	width: 200px;
+	width: 100%;
+	display: inline-block;
 }
