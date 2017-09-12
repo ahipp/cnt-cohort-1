@@ -22,6 +22,7 @@
 						<div>Subscore 2: <?php echo $json['scores']['subscore2']['score']; ?> </div>
 						<div>Subscore 3: <?php echo $json['scores']['subscore3']['score']; ?> </div>
 					</span>
+					<br />
 					<span id="collaborators" class="info-panel col-md-12">
 						<h3>Collaborators</h3>
 						<?php foreach ($json['collabs'] as $collab) {
@@ -34,10 +35,11 @@
 				</div>
 				<div class="col-md-4">
 					<div id="property-specs" class="info-panel">
-						Address: <?php echo $json['specs']['street'] . ", " . $json['specs']['state'] . ", " . $json['specs']['zip']; ?><br />
-						Size: <?php echo $json['specs']['size'] . " sq. ft."; ?><br />
-						Zoning: <?php echo $json['specs']['zoning'] ?><br />
-						Type: <?php echo $json['specs']['type'] ?> <br />
+						<h3>Property Specs</h3>
+						<div>Address: <?php echo $json['specs']['street'] . ", " . $json['specs']['state'] . ", " . $json['specs']['zip']; ?></div>
+						<div>Size: <?php echo $json['specs']['size'] . " sq. ft."; ?></div>
+						<div>Zoning: <?php echo $json['specs']['zoning'] ?></div>
+						<div>Type: <?php echo $json['specs']['type'] ?> </div>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -46,24 +48,26 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div id="historical-comps" class="col-md-12">
-					<h4>Historical Comparable Properties</h4>
-					<?php foreach ($json['comps'] as $comp) {
-					echo "<div class=\"col-md-4\" style=\"display:inline-block\"><div class=\"comp info-panel col-md-12\">
-							<img src=\"./img/" . $comp['image'] . "\"> <br />" .
-							$comp['street'] . ", " . $comp['city'] . ", " . $comp['state'] . " " . $comp['zip'] . "<br />" .
-						 "</div></div>";
-					}?>
-				</div>
-			</div>
+			<br />
+			<h2>Notes</h2>
 			<div class="row">
 				<div id="notes" class="col-md-12">
-					<h2>Notes</h2>
 					<?php foreach ($json['notes'] as $note) {
 					echo "<div class=\"note\"><b>" . $note['name'] . "</b> <i>" . $note['timestamp'] . "</i>: " . $note['text'] . "</div>";
 					}?>
 				</div>
+			</div>
+			<br />
+			<h4>Historical Comparable Properties</h4>
+			<div class="row">
+				<?php foreach ($json['comps'] as $comp) {
+				echo "<div class=\"col-md-4\">" .
+							"<div class=\"comp info-panel\">
+								<img src=\"./img/" . $comp['image'] . "\"> <br />" .
+								$comp['street'] . ", " . $comp['city'] . ", " . $comp['state'] . " " . $comp['zip'] . "<br />" .
+							"</div>" .
+					 "</div>";
+				}?>
 			</div>
 		</div>
 	</main>

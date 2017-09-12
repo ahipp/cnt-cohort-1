@@ -5,22 +5,30 @@
 #historical-comps {
 	display: inline-block;
 }
-#property-image {
-	float: right;
+.row {
+	display: table;
+}
+.col-md-4 {
+	float: none;
+	display: table-cell;
+	vertical-align: top;
+}
+.info-panel {
+	display: block;
+	padding: 3%;
+	background-color: LightGray;
+}
+.full-row-height {
+	height: 100%;
+	overflow: hide;
+}
+.info-panel img {
+	margin: auto;
+	width: 100%;
 }
 div.score {
 	font-size: 72;
 }
-.info-panel {
-	border-style: solid;
-	border-width: 2px;
-	display: inline-block;
-	margin: 5px;
-}
 div.comp {
-	display: inline-block;
-}
-div.comp img{
-	width: 100%;
-	display: inline-block;
+	display: block;
 }
