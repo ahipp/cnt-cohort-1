@@ -4,7 +4,8 @@
 		"city": "Chicago",
 		"state": "IL",
 		"zip": 60604,
-		"size": 1500,
+		"size": 4.98,
+		"existingStructures": "vacant site",
 		"zoning": "Industrial",
 		"type": "Manufacturing",
 		"longitude": 41.911051,
@@ -12,26 +13,36 @@
 	},
 	"scores": {
 		"overall": 80,
-		"subscore1": {
-			"score": 80,
+		"transportation": {
+			"score": 70,
 			"attribute1": 50,
 			"attribute2": 50
 		},
-		"subscore2": {
-			"score": 95,
+		"workforce": {
+			"score": 94,
 			"attribute1": 95,
 			"attribute2": 95
-		},
-		"subscore3": {
-			"score": 65,
-			"attribute1": 65,
-			"attribute2": 65
 		}
 	},
 	"image": "testImage.jpg",
+	"mapsrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2971.420809732229!2d-87.6510488845594!3d41.86229187922344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2cfa0dfb24d3%3A0x4d8774858a3e4602!2s1200+S+Peoria+St%2C+Chicago%2C+IL+60608!5e0!3m2!1sen!2sus!4v1506384111313",
+	"incentives" : [
+		"Cook County Growth Zones",
+		"City of Chicago Local Industrial Retention Initiative Zone"
+	],
+	"notes": {
+		"location": "12000 S Peoria, Chicago",
+		"type": "Manufacturing",
+		"text": "This manufacturing site in a Cook County Growth zone is less than two miles from the juncture of the I-94 and I-57 Expressways via arterial truck routes and enjoys transit access for nearby skilled industrial workforce."
+	},
 	"collabs": [
-		{"name": "collaborator 1", "title": "Property Dude", "company": "Company A"},
-		{"name": "collaborator 2", "title": "Senior Property Dude", "company": "Company B"}
+		{
+			"name": "Abraham Lacy", 
+			"title": "Executive Director", 
+			"company": "Far South Community Economic Development Corporation",
+			"phone": "773-941-4833",
+			"email": "lacy@farsouthcdc.org"
+		}
 	],
 	"comps": [
 		{
@@ -40,7 +51,15 @@
 			"state": "IL",
 			"zip": 60604,
 			"size": 2000,
-			"image": "testImage.jpg"
+			"image": "testImage.jpg",
+			"scores": {
+				"overall": 80,
+				"transportation": 70,
+				"workforce": 94
+			},
+			"business": "Taking Names and Kicking Ass",
+			"size": 5.37,
+			"type": "Data warehouse"
 		},
 		{
 			"street": "345 Fake Street",
@@ -48,7 +67,15 @@
 			"state": "IL",
 			"zip": 60604,
 			"size": 1800,
-			"image": "testImage.jpg"
+			"image": "testImage.jpg",
+			"scores": {
+				"overall": 80,
+				"transportation": 70,
+				"workforce": 94
+			},
+			"business": "Taking Names and Kicking Ass",
+			"size": 5.37,
+			"type": "Data warehouse"
 		},
 		{
 			"street": "456 Fake Street",
@@ -56,24 +83,15 @@
 			"state": "IL",
 			"zip": 60604,
 			"size": 1400,
-			"image": "testImage.jpg"
-		}
-	],
-	"notes": [
-		{
-			"name": "collaborator 1",
-			"timestamp": "Sep 4 2017 9:37 am",
-			"text": "The city is considering adding a new TIF district which will contain this property"
-		},
-		{
-			"name": "collaborator 2",
-			"timestamp": "Sep 4 2017 9:42 am",
-			"text": "Collaborator 1, are you sure? Where did you hear that?"
-		},
-		{
-			"name": "collaborator 1",
-			"timestamp": "Sep 4 2017 10:42 am",
-			"text": "I will e-mail you my source, Collaborator 1"
+			"image": "testImage.jpg",
+			"scores": {
+				"overall": 80,
+				"transportation": 70,
+				"workforce": 94
+			},
+			"business": "Taking Names and Kicking Ass",
+			"size": 5.37,
+			"type": "Data warehouse"
 		}
 	]
 }
