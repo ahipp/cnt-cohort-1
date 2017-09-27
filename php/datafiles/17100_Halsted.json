@@ -1,0 +1,77 @@
+{
+	"specs": {
+		"street": "17100 Halsted St",
+		"city": "Harvey",
+		"state": "IL",
+		"zip": 60426,
+		"size": "Large (greater than 300,000 Sqft.)",
+		"type": "Distribution",
+		"acres": 4.98,
+		"existingStructures": "motel to be demolished",
+		"zoning": "Industrial, Distribution"
+	},
+	"scores": {
+		"overall": 67,
+		"transportation": 59,
+		"workforce": 88
+	},
+	"image": "17100-halsted-photo.jpg",
+	"mapsrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2971.420809732229!2d-87.6510488845594!3d41.86229187922344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2cfa0dfb24d3%3A0x4d8774858a3e4602!2s1200+S+Peoria+St%2C+Chicago%2C+IL+60608!5e0!3m2!1sen!2sus!4v1506384111313",
+	"incentives" : [
+		"Illinois Enterprise Zone",
+		"Cook County Growth Zone"
+	],
+	"notes": {
+		"location": "17100 S Halsted, Harvey",
+		"type": "Distribution",
+		"text": "This site in a Cook County Growth Zone is located on a ramp to the I-80 Expressway and approximately a half mile via truck route from the gate of Chicagoland's CN Intermodal Freight Terminal, which lifts over 400,000 contianers per year. It is an optimal distribution center location."
+	},
+	"collabs": [
+		{
+			"name": "Reggie Greenwood", 
+			"title": "Executive Director", 
+			"company": "Chicago Southland Economic Development Corporation",
+			"phone": "708-519-0432",
+			"email": "reggie.greenwood@chicagosouthlandedc.org",
+			"website": "www.CSEDC.info"
+		}
+	],
+	"comps": [
+		{
+			"location": "300 W Armory Dr, South Holland, IL",		
+			"image": "comop-300-w-armory-dr.jpg",
+			"scores": {
+				"overall": 66,
+				"transportation": 63,
+				"workforce": 84
+			},
+			"size": "609,840 Sqft. (14 acres)",
+			"business": "The Great Escape (closed)",
+			"type": "Manufacturing"
+		},
+		{
+			"location": "15801 Van Drunen Rd",
+			"image": "comp-15801-van-drunen-rd.jpg",
+			"scores": {
+				"overall": 64,
+				"transportation": 62,
+				"workforce": 83
+			},
+			"business": "American Piping Products",
+			"size": "369,998 Sqft. (8.5 acres)",
+			"type": "Data warehouse"
+		},
+		{
+			"location": "323 E 151st St",
+			"image": "comp-323-e-151st-st.jpg",
+			"scores": {
+				"overall": 77,
+				"transportation": 74,
+				"workforce": 90
+			},
+			"business": "Sterling Lumber Company",
+			"size": "2,187,147 Sqft. (50 acres)",
+			"type": "Manufacturing"
+		}
+	]
+}

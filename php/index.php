@@ -8,16 +8,21 @@
 	</header>
 	<main>
 		<div id="homepage-wrapper">
-			<br />
-			<h1>Find a property</h1>
-			<br />
-			<form action="/property-details.php" id="searchform">
-				<select id="search-input" name="address" form="searchform"/>
-					<option value="123_Fake_Street">123 Fake Street, Chicago, IL</option>
-				</select>
-				<br /><br />
-				<input type="submit" class="go-button" value="GO!">
-			</form>
+			<div id="homepage-finder">
+				<br />
+				<h1>Find a property</h1>
+				<br />
+				<form action="/property-details.php" id="searchform">
+					<select id="search-input" name="address" form="searchform"/>
+						<option value="12000_S_Peoria">12000 S Peoria St, Chicago, IL</option>
+						<option value="4711_N_Lamont">4711 N Lamont Ave, Chicago, IL</option>
+						<option value="13636_S_Western">13636 S Western Ave, Blue Island, IL</option>
+						<option value="17100_Halsted">17100 Halsted St, Harvey, IL</option>
+					</select>
+					<br /><br />
+					<input type="submit" class="go-button" value="GO!">
+				</form>
+			</div>
 			<br />
 			<br />
 			<br />
@@ -31,11 +36,10 @@
 			</p>
 		</div>
 	</main>
+	<footer>
+		<?php echo file_get_contents("./html/footer.html"); ?>
+	</footer>
 </body>
-
 <script type="text/javascript">
-    
-	
-    
 </script>
 </html>

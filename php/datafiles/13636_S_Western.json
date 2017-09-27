@@ -1,0 +1,77 @@
+{
+	"specs": {
+		"street": "13636 S Western Ave",
+		"city": "Blue Island",
+		"state": "IL",
+		"zip": 60406,
+		"size": "Large (greater than 300,000 Sqft.)",
+		"type": "Manufacturing",
+		"acres": 19.1,
+		"existingStructures": "Industrial building of approximately 500,000 square feet",
+		"zoning": "Industrial, Manufacturing or Distribution"
+	},
+	"scores": {
+		"overall": 61,
+		"transportation": 43,
+		"workforce": 90
+	},
+	"image": "13636-s-western-photo.jpg",
+	"mapsrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2971.420809732229!2d-87.6510488845594!3d41.86229187922344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2cfa0dfb24d3%3A0x4d8774858a3e4602!2s1200+S+Peoria+St%2C+Chicago%2C+IL+60608!5e0!3m2!1sen!2sus!4v1506384111313",
+	"incentives" : [
+		"Illinois Enterprise Zone",
+		"Cook County Growth Zone"
+	],
+	"notes": {
+		"location": "13636 S Western Ave, Blue Island",
+		"type": "Manufacturing",
+		"text": "This rail-served 500,000 square-foot building in a Cook County Growth Zone was constructed as a canary. It is less than two miles from the intersection of the I-57 and I-294 expressways and offers transit service to a nearby skilled workforce. It could be a high quality site for manufacturing or distribution via rail-to-truck transloading."
+	},
+	"collabs": [
+		{
+			"name": "Reggie Greenwood", 
+			"title": "Executive Director", 
+			"company": "Chicago Southland Economic Development Corporation",
+			"phone": "708-519-0432",
+			"email": "reggie.greenwood@chicagosouthlandedc.org",
+			"website": "www.CSEDC.info"
+		}
+	],
+	"comps": [
+		{
+			"location": "300 W Armory Dr, South Holland, IL",		
+			"image": "comop-300-w-armory-dr.jpg",
+			"scores": {
+				"overall": 66,
+				"transportation": 63,
+				"workforce": 84
+			},
+			"size": "609,840 Sqft. (14 acres)",
+			"business": "The Great Escape (closed)",
+			"type": "Manufacturing"
+		},
+		{
+			"location": "3701 W 128th Pl, Alsip, IL",
+			"image": "comp-3701-w-128th.jpg",
+			"scores": {
+				"overall": 60,
+				"transportation": 54,
+				"workforce": 84
+			},
+			"business": "Labriola Baking Company",
+			"size": "611,403 Sqft. (14 acres)",
+			"type": "Manufacturing"
+		},
+		{
+			"location": "3000 139th St, Blue Island, IL",
+			"image": "comp-3000-139th-st.jpg",
+			"scores": {
+				"overall": 71,
+				"transportation": 64,
+				"workforce": 90
+			},
+			"business": "Scrap Metal Services LLC",
+			"size": "567,151 Sqft. (13 acres)",
+			"type": "Manufacturing"
+		}
+	]
+}

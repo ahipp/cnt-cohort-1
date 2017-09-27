@@ -17,11 +17,13 @@
 				<div class="col-md-4">
 					<span id="reland-score" class="info-panel col-md-12">
 						<h3>ReLand Score</h3>
-						<div class="score big"><?php echo $json['scores']['overall']; ?></div>
+						<div style="display:inline-block;" width="100%">
+							<div class="score big left" width="20%"><?php echo $json['scores']['overall']; ?></div>
+						</div>
 						<div>Median score for Cook County: 52</div>
 						<br />
-						<div>Transportation: <?php echo $json['scores']['transportation']['score']; ?> </div>
-						<div>Work force: <?php echo $json['scores']['workforce']['score']; ?> </div>
+						<div>Transportation: <?php echo $json['scores']['transportation']; ?> </div>
+						<div>Work force: <?php echo $json['scores']['workforce']; ?> </div>
 					</span>
 					<br />
 					<span id="development-rep" class="info-panel col-md-12">
@@ -93,7 +95,7 @@
 				echo "<div class=\"col-md-4\">" .
 							"<div class=\"comp info-panel\">
 								<img src=\"./img/" . $comp['image'] . "\"> <br />" .
-								$comp['street'] . ", " . $comp['city'] . ", " . $comp['state'] . " " . $comp['zip'] . 
+								$comp['location'] . 
 								"<br />" .
 								"<h3>ReLand Score</h3>" .
 								"<div class=\"score right-align\">" . $comp['scores']['overall'] . "</div>" .
@@ -109,12 +111,12 @@
 				}?>
 			</div>
 		</div>
+		<br />
 	</main>
+	<footer>
+		<?php echo file_get_contents("./html/footer.html"); ?>
+	</footer>
 </body>
-
 <script type="text/javascript">
-    
-
-    
 </script>
 </html>

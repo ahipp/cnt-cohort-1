@@ -1,0 +1,76 @@
+{
+	"specs": {
+		"street": "12000 S Peoria St",
+		"city": "Chicago",
+		"state": "IL",
+		"zip": 60643,
+		"size": "Small (200,000 to 300,000 Sqft.)",
+		"type": "Manufacturing",
+		"acres": 4.98,
+		"existingStructures": "vacant site",
+		"zoning": "Industrial, Light Manufacturing"
+	},
+	"scores": {
+		"overall": 77,
+		"transportation": 70,
+		"workforce": 94
+	},
+	"image": "12000-s-peoria-st-photo.jpg",
+	"mapsrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2971.420809732229!2d-87.6510488845594!3d41.86229187922344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2cfa0dfb24d3%3A0x4d8774858a3e4602!2s1200+S+Peoria+St%2C+Chicago%2C+IL+60608!5e0!3m2!1sen!2sus!4v1506384111313",
+	"incentives" : [
+		"Illinois Enterprise Zone",
+		"Cook County Growth Zone"
+	],
+	"notes": {
+		"location": "12000 S Peoria St, Blue Island",
+		"type": "Manufacturing",
+		"text": "This manufacturing site in a Cook County Growth Zone is less than two miles from the juncture of the I-94 and I-57 Expressways via arterial truck routes and enjoys transit access for a nearby skilled industrial workforce."
+	},
+	"collabs": [
+		{
+			"name": "Abraham Lacy", 
+			"title": "Executive Director", 
+			"company": "Far South Community Economic Development Corporation",
+			"phone": "773-941-4833",
+			"email": "lacy@farsouthcdc.org"
+		}
+	],
+	"comps": [
+		{
+			"location": "641 E 108th St, Chicago, IL",		
+			"image": "comp-641-e-108th-st.jpg",
+			"scores": {
+				"overall": 77,
+				"transportation": 64,
+				"workforce": 98
+			},
+			"size": "233,917 Sqft. (5.37 acres)",
+			"business": "Eco Auto Recycling",
+			"type": "Data warehouse"
+		},
+		{
+			"location": "680 W 134th St, Riverdale, IL 60827",
+			"image": "comp-680-w-134th-st.jpg",
+			"scores": {
+				"overall": 80,
+				"transportation": 74,
+				"workforce": 96
+			},
+			"business": "Riverdale Plating",
+			"size": "261,360 Sqft. (6 acres)",
+			"type": "Manufacturing"
+		},
+		{
+			"location": "11900 S Cottage Grove Ave, Chicago, IL",
+			"image": "comp-11900-s-cottage-grove-ave.jpg",
+			"scores": {
+				"overall": 76,
+				"transportation": 63,
+				"workforce": 97
+			},
+			"business": "All American Recycling",
+			"size": "388,137 Sqft. (8.91 acres)",
+			"type": "Warehouse"
+		}
+	]
+}
