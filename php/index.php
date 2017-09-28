@@ -9,31 +9,44 @@
 	<main>
 		<div id="homepage-wrapper">
 			<div id="homepage-finder">
-				<br />
-				<h1>Find a property</h1>
+				<div class="inverted-color" style="width:40%">
+					<h2>Find a property</h2>
+				</div>
 				<br />
 				<form action="/property-details.php" id="searchform">
-					<select id="search-input" name="address" form="searchform"/>
-						<option value="12000_S_Peoria">12000 S Peoria St, Chicago, IL</option>
-						<option value="4711_N_Lamont">4711 N Lamont Ave, Chicago, IL</option>
-						<option value="13636_S_Western">13636 S Western Ave, Blue Island, IL</option>
-						<option value="17100_Halsted">17100 Halsted St, Harvey, IL</option>
-					</select>
-					<br /><br />
-					<input type="submit" class="go-button" value="GO!">
+					<input type="hidden" id="property-search-value" name="address" form="searchform" />
+					<div style="border: 1px solid #DDD; width: 100%;">
+						<div style="background-color: white; padding-left: 0px;">
+							<input id="property-search" type="text" autocomplete="off" />
+						</div>
+						<div style="background-color: white;">
+							<img id="search-icon" src="./img/icon-search.png"/>
+						</div>
+					</div>
+					<div id="suggest-matches"></div>
 				</form>
 			</div>
-			<br />
-			<br />
-			<br />
-			<h3>About ReLand</h3>
-			<p>
-				Tbh venmo kale chips, echo park forage pour-over distillery 90's sriracha. Twee tumblr woke, keytar messenger bag hexagon XOXO marfa try-hard la croix lyft street art. Yuccie church-key tacos, 
-				kitsch unicorn cronut art party tofu vice pitchfork kale chips viral sriracha. Hot chicken small batch food truck 90's. Hella cardigan wayfarers 8-bit raw denim lomo blue bottle 3 wolf moon 
-				chambray knausgaard thundercats. Kitsch messenger bag portland salvia offal blue bottle banjo DIY lyft meggings. Jianbing aesthetic mumblecore shaman. Shaman thundercats quinoa, PBR&B twee deep v 
-				brooklyn copper mug. Organic kinfolk master cleanse, sartorial pabst retro unicorn microdosing cardigan. Paleo humblebrag authentic, squid keytar sartorial shaman meditation kitsch marfa irony. 
-				Readymade before they sold out yuccie live-edge mlkshk +1 master cleanse mustache drinking vinegar slow-carb enamel pin brunch post-ironic pickled. Viral slow-carb butcher photo booth pop-up shoreditch.			
-			</p>
+			<div id="homepage-about">
+				<h3>About ReLand</h3>
+				<div style="width:40%"><img src="./img/yellow-orange-blue-highlight-band.png"></div>
+				<div>
+					<p>
+						ReLand works to solve a problem that is commonplace to cities nationwide: the slow pace of reactivating former
+						industrial properties, especially those in economically depressed communities, into new job-creating facilities. It can
+						take decades - and for some locations it seems to never happen.
+					</p>
+					<p>
+						Fortunately many organizations and individuals have a vital stake in the redevelopment of urban industrial properties,
+						including cities, real estate brokers, economic development agencies, community organizations, land trusts, unions - all
+						want to make this happen. Given the right tools, this process can be accelerated.
+					</p>
+					<p>
+						ReLand is a mash-up of place-based data on individual parcels with market-wide data on the sales of industrial sites.
+						Using a depth of data on specific properties, it assigns a ReLand Score to industrial properties to identify sites that are
+						desirable for redevelopment.
+					</p>
+				</div>
+			</div>
 		</div>
 	</main>
 	<footer>
@@ -41,5 +54,49 @@
 	</footer>
 </body>
 <script type="text/javascript">
+
+	
+	var properties = [
+		{
+			address: '12000 S Peoria St, Chicago, IL',
+			submitVal: '12000_S_Peoria'
+		},
+		{
+			address: '4711 N Lamon Ave, Chicago, IL',
+			submitVal: '4711_N_Lamon'
+		},
+		{
+			address: '13636 S Western Ave, Blue Island, IL',
+			submitVal: '13636_S_Western'
+		},
+		{
+			address: '17100 Halsted St, Harvey, IL',
+			submitVal: '17100_Halsted'
+		}
+	]
+	
+	$('#property-search').keyup(function(event) {
+		$("#suggest-matches").empty();
+		
+		let searchValue = $("#property-search").val();
+		properties.forEach(function(element) {
+			if (searchValue && element.address.indexOf(searchValue) > -1) {		
+				$("#suggest-matches").append("<div class=\"suggested-match suggested-match-unhover\" onclick=\"submitSearch(\'" + element.submitVal + "\');\">" + element.address +"</div>");			
+			}
+		});
+		
+		$('.suggested-match').hover(function() {
+			$(this).removeClass('suggested-match-unhover').addClass('suggested-match-hover');
+		}, function() {
+			$(this).removeClass('suggested-match-hover').addClass('suggested-match-unhover');
+		});
+	});
+		
+	function submitSearch(submitValue) {
+		$("#suggested-matches").empty();
+		$("#property-search-value").val(submitValue);
+		$("#searchform").submit();
+	}
+	
 </script>
 </html>

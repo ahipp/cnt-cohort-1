@@ -12,16 +12,36 @@
 	</header>
 	<main>
 		<div id="data-wrapper" class="container-fluid">
-			<h1>Property Details</h1>
+			<div class="row">
+				<div class="col-md-12">
+					<div style="padding-left: 15px;">
+						<h3><?php echo $json['address'] ?></h3>
+						<b>Characteristics segmented by:</b> <br />
+						Property Size: <b><?php echo $json['specs']['size'] ?></b><br />
+						Type: <b><?php echo $json['specs']['type'] ?></b><br /><br />
+					</div>
+				</div>
+			</div>
+			<div class="row">			
+				<div class="col-md-4">
+					<div class="inverted-color" style="padding-left: 15px;">
+						<h3><b>Property Details</b></h3>
+					</div>
+					<div class="divider"><img src="./img/yellow-orange-blue-highlight-band.png"></div>
+				</div>
+			</div>
+			<br />
 			<div class="row">
 				<div class="col-md-4">
 					<span id="reland-score" class="info-panel col-md-12">
-						<h3>ReLand Score</h3>
-						<div style="display:inline-block;" width="100%">
-							<div class="score big left" width="20%"><?php echo $json['scores']['overall']; ?></div>
+						<div>
+							<h3>ReLand Score</h3>
 						</div>
+						<div style="display:inline-block;">
+							<div class="score score-big"><?php echo $json['scores']['overall']; ?></div>
+						</div>
+						<hr style="height:1px; visibility: hidden">
 						<div>Median score for Cook County: 52</div>
-						<br />
 						<div>Transportation: <?php echo $json['scores']['transportation']; ?> </div>
 						<div>Work force: <?php echo $json['scores']['workforce']; ?> </div>
 					</span>
@@ -97,16 +117,23 @@
 								<img src=\"./img/" . $comp['image'] . "\"> <br />" .
 								$comp['location'] . 
 								"<br />" .
-								"<h3>ReLand Score</h3>" .
-								"<div class=\"score right-align\">" . $comp['scores']['overall'] . "</div>" .
-								"<br />" .
-								"<div>Transportation: " . $comp['scores']['transportation'] . "</div>" .
-								"<div>Work force: " . $comp['scores']['workforce'] . "</div>" .
-								"<br />" .
-								"<div>Current business: " . $comp['business'] . "</div>" .
-								"<div>Property size: " . $comp['size'] . " acres</div>" .
-								"<div>Type of property: " . $comp['type'] . "</div>" .
+								"<div style=\"display:inline-block; line-height:30px; font-size:30px;\">" .
+									"ReLand Score" .
+								"</div>" .
+								"<div style=\"display:inline-block; float: right;\">" .
+									"<div class=\"score score-small right-align\">" . $comp['scores']['overall'] . "</div>" .
+								"</div>" .
+								"<br /><br />" .
+								"<span style=\"font-size: 18px;\">" .
+									"<div>Transportation: <b>" . $comp['scores']['transportation'] . "</b></div>" .
+									"<div>Work force: <b>" . $comp['scores']['workforce'] . "</b></div>" .
+									"<br />" .
+									"<div>Current business: <b>" . $comp['business'] . "</b></div>" .
+									"<div>Property size: <b>" . $comp['size'] . "</b> acres</div>" .
+									"<div>Type of property: <b>" . $comp['type'] . "</b></div>" .
+								"</span>" .
 							"</div>" .
+							"<div class=\"divider\"><img src=\"./img/yellow-orange-blue-highlight-band.png\"></div>" .
 					 "</div>";
 				}?>
 			</div>

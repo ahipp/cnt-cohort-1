@@ -1,3 +1,6 @@
+* {
+	font-family: Lato;
+}
 #header-row-1 {
 	background-color: white;
 	height: 100px;
@@ -11,9 +14,6 @@
 #cnt-initiative-logo {
 	float: right;
 }
-#homepage-finder {
-	background-image: 'testImage.jpg'
-}
 #menu-icons {
 	float: right;
 }
@@ -21,6 +21,27 @@
 	padding: 3px;
 	position: relative;
 	top: 50%;
+}
+
+#property-search {
+	height: 60px;
+	width: 95%;
+	float: left;
+	font-size: 60;
+	border: none;
+}
+#suggest-matches {
+	font-size: 28;
+
+}
+#search-icon {
+	height: 60px;
+	width: 5%;
+	float: right;
+}
+
+input:focus {
+	outline: none;
 }
 
 #footer {
@@ -54,12 +75,35 @@
 	width: 100%;
 	height: 88%;
 }
-#homepage-wrapper {
-	padding: 10%;
-}
+
 #homepage-wrapper select, option {
 	width: 100%;
 	font-size: 48;
+}
+#homepage-finder {
+	background-image: url("../img/Reland-home-bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 295px;
+	padding-left: 8%;
+	padding-right: 8%;
+	padding-top: 3%;
+}
+#homepage-about {
+	padding-left: 8%;
+	padding-right: 8%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+.divider img {
+	width: 100%;
+	height: 5px;
+}
+.inverted-color {
+	background-color: #333333;
+	color: white;
+	padding: 2px;
 }
 .go-button {
 	display: block;
@@ -68,6 +112,12 @@
 	color: white;
 	font-size: 18;
 	padding: 5px 75px 5px 75px;
+}
+.suggested-match-unhover {
+	background-color: white;
+}
+.suggested-match-hover {
+	background-color: #3297FD;
 }
 
 .row {
@@ -88,10 +138,20 @@
 	overflow: hide;
 }
 .score {
-	background-color: green;
+	background-color: #00ab4e;
+	color: white;
+	font-weight: 400;
 }
-.big {
-	font-size: 72;
+.score-big {
+	font-size: 50px;
+	line-height: 50px;
+	padding: 12px;
+}
+.score-small {
+	font-size: 30px;
+	line-height: 30px;
+	padding: 6px;
+	text-align: center;
 }
 .right {
 	float: right;

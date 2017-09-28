@@ -1,9 +1,6 @@
 {
+	"address": "12000 S Peoria St, Chicago, IL 60643",
 	"specs": {
-		"street": "12000 S Peoria St",
-		"city": "Chicago",
-		"state": "IL",
-		"zip": 60643,
 		"size": "Small (200,000 to 300,000 Sqft.)",
 		"type": "Manufacturing",
 		"acres": 4.98,
@@ -16,7 +13,7 @@
 		"workforce": 94
 	},
 	"image": "12000-s-peoria-st-photo.jpg",
-	"mapsrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2971.420809732229!2d-87.6510488845594!3d41.86229187922344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2cfa0dfb24d3%3A0x4d8774858a3e4602!2s1200+S+Peoria+St%2C+Chicago%2C+IL+60608!5e0!3m2!1sen!2sus!4v1506384111313",
+	"mapsrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2980.0648117547776!2d-87.64648044838815!3d41.67594367913682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e246990ccc241%3A0x1d23b90e6d359821!2s12000+S+Peoria+St%2C+Chicago%2C+IL+60643!5e0!3m2!1sen!2sus!4v1506563155176",
 	"incentives" : [
 		"Illinois Enterprise Zone",
 		"Cook County Growth Zone"

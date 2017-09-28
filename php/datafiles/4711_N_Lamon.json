@@ -1,0 +1,73 @@
+{
+	"address": "4711 N Lamon Ave, Chicago, IL 60630",
+	"specs": {
+		"size": "Small (200,000 to 300,000 Sqft.)",
+		"type": "Manufacturing",
+		"acres": 6,
+		"existingStructures": "Two-story industrial building of approximately 41,000 square feet",
+		"zoning": "Industrial, Light Manufacturing or Commercial"
+	},
+	"scores": {
+		"overall": 69,
+		"transportation": 59,
+		"workforce": 91
+	},
+	"image": "4711-n-laman-photo.jpg",
+	"mapsrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.586190449525!2d-87.75198654838172!3d41.96622257911311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fcc3b249442b9%3A0xd2decd9078d125a3!2s4711+N+Lamon+Ave%2C+Chicago%2C+IL+60630!5e0!3m2!1sen!2sus!4v1506563294645",
+	"incentives" : [
+		"Illinois Enterprise Zone",
+		"Cook County Growth Zone"
+	],
+	"notes": {
+		"location": "4711 N Lamon, Chicago",
+		"type": "Manufacturing",
+		"text": "This manufacturing building located in a vibrant industrial district is close to O'Hare and the I-94 Expressway and offers outstanding access to Chicago's base of business customers and suppliers as well as transit access to a skilled, nearby workforce. It may provide a quality site for specialized manufacturing or an indsutrial service business."
+	},
+	"collabs": [
+		{
+			"name": "Janita Tucker", 
+			"title": "Executive Director", 
+			"company": "Peterson Pulaski Business & Industrial Council",
+			"phone": "773-866-2900",
+			"email": "jtucker@ppbic.org"
+		}
+	],
+	"comps": [
+		{
+			"location": "5485 Elston Ave, Chicago, IL",		
+			"image": "comp-5485-elston.jpg",
+			"scores": {
+				"overall": 72,
+				"transportation": 66,
+				"workforce": 90
+			},
+			"size": "27,203 Sqft. (0.6 acres)",
+			"business": "Clean Harbors East",
+			"type": "Warehouse"
+		},
+		{
+			"location": "4506 W Lawrence Ave, Chicago, IL",
+			"image": "comp-4506-w-lawrance.jpg",
+			"scores": {
+				"overall": 70,
+				"transportation": 59,
+				"workforce": 92
+			},
+			"business": "Clark Street Sports",
+			"size": "21,997 Sqft. (0.5 acres)",
+			"type": "Warehouse"
+		},
+		{
+			"location": "6040-6044 N Pulaski Rd, Chicago, IL",
+			"image": "comp-6040-6044-n-paulski.jpg",
+			"scores": {
+				"overall": 78,
+				"transportation": 74,
+				"workforce": 92
+			},
+			"business": "Habitat for Humanity ReSto",
+			"size": "29,999 Sqft. (0.7 acres)",
+			"type": "Manufacturing"
+		}
+	]
+}

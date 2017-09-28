@@ -1,9 +1,6 @@
 {
+	"address": "13636 S Western Ave, Blue Island, IL 60406",
 	"specs": {
-		"street": "13636 S Western Ave",
-		"city": "Blue Island",
-		"state": "IL",
-		"zip": 60406,
 		"size": "Large (greater than 300,000 Sqft.)",
 		"type": "Manufacturing",
 		"acres": 19.1,
@@ -16,7 +13,7 @@
 		"workforce": 90
 	},
 	"image": "13636-s-western-photo.jpg",
-	"mapsrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2971.420809732229!2d-87.6510488845594!3d41.86229187922344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2cfa0dfb24d3%3A0x4d8774858a3e4602!2s1200+S+Peoria+St%2C+Chicago%2C+IL+60608!5e0!3m2!1sen!2sus!4v1506384111313",
+	"mapsrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.491568363502!2d-87.6835842845662!3d41.64512007924135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2342fff36e03%3A0xcb3d4087165b8347!2s13636+S+Western+Ave%2C+Blue+Island%2C+IL+60406!5e0!3m2!1sen!2sus!4v1506563349988",
 	"incentives" : [
 		"Illinois Enterprise Zone",
 		"Cook County Growth Zone"

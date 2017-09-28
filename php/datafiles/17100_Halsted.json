@@ -1,9 +1,6 @@
 {
+	"address": "17100 Halsted St, Harvey, IL 60426",
 	"specs": {
-		"street": "17100 Halsted St",
-		"city": "Harvey",
-		"state": "IL",
-		"zip": 60426,
 		"size": "Large (greater than 300,000 Sqft.)",
 		"type": "Distribution",
 		"acres": 4.98,
@@ -16,7 +13,7 @@
 		"workforce": 88
 	},
 	"image": "17100-halsted-photo.jpg",
-	"mapsrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2971.420809732229!2d-87.6510488845594!3d41.86229187922344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2cfa0dfb24d3%3A0x4d8774858a3e4602!2s1200+S+Peoria+St%2C+Chicago%2C+IL+60608!5e0!3m2!1sen!2sus!4v1506384111313",
+	"mapsrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2984.5024422107745!2d-87.64131968456822!3d41.580011979246805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2274dafbf7b1%3A0x9d373cd7f98992da!2s17100+Halsted+St%2C+Harvey%2C+IL+60426!5e0!3m2!1sen!2sus!4v1506563407574",
 	"incentives" : [
 		"Illinois Enterprise Zone",
 		"Cook County Growth Zone"
